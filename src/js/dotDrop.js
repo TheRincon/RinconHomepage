@@ -78,9 +78,10 @@ function updateDots() {
         var previousY = ((u.currentColumnIndex) * (dotDiameter + yMargin)) + dotMargin + (yMargin / 2) + dotRadius;
         drawDot(x, previousY, dotRadius * 0.4);
         u.currentColumnIndex++;
-        var newUpdates = updates.filter(u => u.active);
-        updates = newUpdates;
     });
+
+    var newUpdates = updates.filter(u => u.active);
+    updates = newUpdates;
 }
 
 for (var i = 0; i < numRows; i++) {

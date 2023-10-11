@@ -34,10 +34,6 @@ var w = c.width = window.innerWidth,
 ctx.fillStyle = 'black';
 ctx.fillRect( 0, 0, w, h );
 
-function getRandomArbitrary(min, max) {
-    return Math.random() * (max - min) + min;
-}
-
 function divByTwelve(z) {
     let x = Math.floor(Math.random() * z);
     if (x % 12 == 0) {
